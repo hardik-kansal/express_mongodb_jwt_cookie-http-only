@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./styles_Sup.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="img"></div>
+      <div class="cont">
+        <div class="signup_heading"><h1>SignUP</h1></div>
+        <div class="signup_cont">
+          <form action="/sign_up" method="post">
+            <div class="fn">
+              <h1><label for="_fn">Firstname</label></h1>
+              <input type="text" id="_fn" name="fn" required />
+            </div>
+            <div class="ln">
+              <h1><label for="_ln">Lastname</label></h1>
+              <input type="text" id="_fn" name="ln" required />
+            </div>
+            <div class="e">
+              <h1><label for="_e">Email</label></h1>
+              <input type="email" id="_fn" name="e" required />
+            </div>
+            <div class="p">
+              <h1><label for="_p">Password</label></h1>
+              <input type="password" id="_p" name="p" required />
+            </div>
+            <input type="submit" class="submit" id="_submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

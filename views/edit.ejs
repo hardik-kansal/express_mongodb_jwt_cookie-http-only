@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Article</title>
+    <link rel="stylesheet" href="../edit.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="img"></div>
+      <div class="cont">
+        <div class="heading"><h1>Edit Article</h1></div>
+        <div class="content">
+          <form action="/edit/<%=article1.id%>" method="post" _method="PUT">
+            <div class="head"><h2>Title</h2></div>
+            <div>
+              <input
+                type="text"
+                class="text"
+                name="title"
+                value="<%=article1.title%>"
+              />
+            </div>
+            <div class="head"><h2>Description</h2></div>
+            <div>
+              <input
+                type="text"
+                class="text"
+                name="desc"
+                value="<%=article1.desc%>"
+              />
+            </div>
+            <div class="head"><h2>Content</h2></div>
+            <div>
+              <textarea name="content" cols="30" rows="10">
+<%=article1.content%>
+              </textarea>
+            </div>
+            <input class="submit" type="submit" value="Save" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

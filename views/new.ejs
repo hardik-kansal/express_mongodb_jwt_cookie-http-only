@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Article</title>
+    <link rel="stylesheet" href="./new.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="img"></div>
+      <div class="cont">
+        <div class="heading"><h1>New Article</h1></div>
+        <div class="content">
+          <form action="/new" method="post">
+            <div class="head"><h2>Title</h2></div>
+            <div><input type="text" class="text" name="title" /></div>
+            <div class="head"><h2>Description</h2></div>
+            <div><input type="text" class="text" name="desc" id="desc" /></div>
+            <div class="head"><h2>Content</h2></div>
+            <div>
+              <textarea name="content" rows="20" id="textarea"></textarea>
+            </div>
+            <!-- <div class="email"><input type="email" name="email" /></div> -->
+            <input type="submit" class="submit" value="Create" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

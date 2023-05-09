@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign_in</title>
+    <link rel="stylesheet" href="./styles_Sin.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="img"></div>
+      <div class="cont">
+        <div class="login_heading"><h1>Login</h1></div>
+        <div class="login_cont">
+          <form action="/sign_in" method="post">
+            <div class="email">
+              <h1 class="email_heading">
+                <label for="email_input">Email</label>
+              </h1>
+              <input
+                type="email"
+                class="email_input"
+                id="email_input"
+                name="e"
+                required
+              />
+            </div>
+            <div class="passwd">
+              <h1 class="passwd_heading">
+                <label for="passwd_input">Password</label>
+              </h1>
+              <input
+                type="password"
+                class="passwd_input"
+                id="passwd_input"
+                name="p"
+                required
+              />
+            </div>
+            <div>
+              <input type="submit" class="submit" value="Login" id="_submit" />
+            </div>
+          </form>
+          <div class="or">OR</div>
+          <div class="submit c"><a href="/sign_up">Create an account</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
