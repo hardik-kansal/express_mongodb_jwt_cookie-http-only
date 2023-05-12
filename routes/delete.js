@@ -11,7 +11,7 @@ routerDeleteArticle.delete("/:id", authenticate, async (req, res) => {
       $and: [{ _id: id }, { email: req.client.e }],
     });
     console.log(article1);
-    if (article1) {
+    if (!article1) {
       res.sendStatus(401);
     } else {
       await newArticle.findByIdAndDelete(id);
