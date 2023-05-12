@@ -15,7 +15,7 @@ routerEditArticle.get(
     if (article1.length == 0) {
       res.sendStatus(401);
     } else {
-      res.render("edit", { article1: article1 });
+      res.render("edit", { article1: article1[0] });
     }
   }
 );
